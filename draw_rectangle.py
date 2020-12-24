@@ -1,7 +1,10 @@
 from PIL import Image, ImageOps,ImageDraw
-img=Image.open("img.jpg")
+img_dir="./img/hr.jpg"
+
+img=Image.open(img_dir)
 a=ImageDraw.ImageDraw(img)
-a.rectangle((280,155,390,265),fill =None,outline ='red',width =2)
+a.rectangle((230,180,320,270),fill =None,outline ='red',width =2)
+# img.show()
 img.save("rectangle.jpg")
 
 #图片左上角为坐标原点
