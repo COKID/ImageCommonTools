@@ -11,7 +11,7 @@ img_full_dir = [join(img_dir, x) for x in listdir(img_dir)]
 for name,path in zip(img_filename,img_full_dir):
     img=Image.open(path)
     a=ImageDraw.ImageDraw(img)
-    a.rectangle((120,240,220,340),fill =None,outline ='red',width =2)
+    a.rectangle((285//4,150//4,410//4,275//4),fill =None,outline ='red',width =2)
     # img.show()
     img.save(join(out_dir,"rectangel_"+name))
 

@@ -7,7 +7,7 @@ from os.path import join
 import os
 import torch.nn as nn
 
-sf=3
+sf=2
 input_dir = r"./input/"
 
 filenames = [join(input_dir, x) for x in listdir(input_dir)]
@@ -35,5 +35,5 @@ def down():
         print(i+1, filename)
 
 if __name__ == '__main__':
-    for sf in [2,4,8]:
+    # for sf in [2,4,8]:
         down()
